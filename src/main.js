@@ -67,7 +67,7 @@ function initTestBlock(id, events, noRemove) {
 						distanciaY*=-1;
 					}
 					checkPlayers_BallCollision();
-					if (count==70){
+					if (count==150){
 						clearInterval (intervalo)
 					}
 					
@@ -98,7 +98,7 @@ function initTestBlock(id, events, noRemove) {
 						distanciaY*=-1;
 					}
 					checkPlayers_BallCollision();
-					if (count==100){
+					if (count==150){
 						clearInterval (intervalo)
 					}
 					

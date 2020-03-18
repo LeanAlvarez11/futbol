@@ -38,7 +38,7 @@ body{
     justify-content: space-around;
     align-items: center;
 }
-button{
+#boton{
     position: absolute;
     left: 25vw;
     top: 35vh;
@@ -48,10 +48,32 @@ button{
     background: linear-gradient(180deg,#202455,#000);
     color:white;
 }
+#back {
+    height: 6vh;
+    width: 60vw;
+    font-size: 3vh;
+}
+#contG{
+    display: flex;
+    flex-direction: column;
+}
+#divBack{
+    width: 100vw;
+    height: 6vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
 @media only screen and (orientation:landscape){
     body{
         display:flex;
         flex-direction: row;
+    }
+    #divBack{
+        width: 40vw;
+    }
+    #back {
+        width: 40vw;
     }
     #out {
         width: 40vw;
@@ -66,7 +88,7 @@ button{
     .cont{
         flex-direction: column;
     }
-    button{
+    #boton{
         left:0.5vw;
         top: 43vh;
         width: 36.5vw;
