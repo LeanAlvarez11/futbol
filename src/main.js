@@ -138,9 +138,9 @@ if (screen.orientation.type=="landscape-primary"){
 	var ball = new Ball(350,250);
 }
 else {
-	var player1 = new Player(470,200);
-	var player2 = new Player(470,1300);
-	var ball = new Ball(465,750);
+	var player1 = new Player(475,250);
+	var player2 = new Player(475,1050);
+	var ball = new Ball(475,650);
 }
 function start(){
 	clear();
@@ -194,14 +194,14 @@ function reset(){
 	var score1 = player1.score;
 	var score2 = player2.score;
 	if (screen.orientation.type=="landscape-primary"){
-		player1 = new Player(200,250);
+		player1 = new Player(200, 50);
 		player2 = new Player(600,250);
 		ball = new Ball(350,250);
 	}
 	else{
-		player1 = new Player(470,200);
-		player2 = new Player(470,1300);
-		ball = new Ball(465,750);
+		player1 = new Player(475,250);
+		player2 = new Player(475,1050);
+		ball = new Ball(475,650);
 	}
 	player1.score = score1;
 	player2.score = score2;
@@ -385,7 +385,7 @@ function renderBackground(){
 	}
 	else{
 		fondo.src="./src/styles/canchaV.png";
-		c.drawImage (fondo,0,0,950,1500);
+		c.drawImage (fondo,0,0,950,1300);
 	}
 }
 
