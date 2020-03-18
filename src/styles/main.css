@@ -1,0 +1,78 @@
+body{
+	background-image: url("fondeishon.jpg");
+    margin: 10px;
+    display:flex;
+    flex-direction: column;
+}
+#canvasDiv{
+    width: 950px;
+    height: 1500px;
+    background-image: url("fondoChampV.jpg");
+}
+.cont {
+    display: flex;
+    flex-direction: row;
+}
+#canvas{
+    background-color: white;
+    display: none;
+}
+#out {
+    width: 67vw;
+    height: 6vh;
+    font-size: 2vh;
+    display: flex;
+    background-image: url("fondo.jpg");
+    background-size: cover;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#turnos {
+    width: 30vw;
+    height: 6vh;
+    font-size: 2vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+button{
+    position: absolute;
+    left: 25vw;
+    top: 35vh;
+    width: 50vw;
+    height: 15vh;
+    font-size: 3vh;
+    background: linear-gradient(180deg,#202455,#000);
+    color:white;
+}
+@media only screen and (orientation:landscape){
+    body{
+        display:flex;
+        flex-direction: row;
+    }
+    #out {
+        width: 40vw;
+        height: 25vh;
+        font-size: 2vw;
+    }
+    #turnos {
+        width: 40vw;
+        height: 25vh;
+        font-size: 4vw;
+    }
+    .cont{
+        flex-direction: column;
+    }
+    button{
+        left: 5vw;
+        top: 20vh;
+        width: 30vw;
+    }
+    #canvasDiv{
+        width: 700px;
+        height: 500px;
+        background-image: url("fondoChamp.jpg");
+    }
+}

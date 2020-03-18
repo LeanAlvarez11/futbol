@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" type="text/css" href="./src/styles/main.css"></link>
+	</head>
+    <body>
+		<div id="canvasDiv">
+		</div>
+		<button id="boton" onclick="iniciar()">START</button>
+		<div class="cont">
+			<div id="turnos"></div>
+			<div id="out"></div>
+		</div>
+		<script>
+			let canvasDiv = document.getElementById("canvasDiv")
+			if (screen.orientation.type=="landscape-primary"){
+				canvasDiv.innerHTML="<canvas id='canvas' width=700 height=500></canvas>"
+			}
+			else {
+				canvasDiv.innerHTML="<canvas id='canvas' width=950 height=1500></canvas>"
+			}
+		</script>
+		<script type="text/javascript" src="./src/main.js"></script>	
+    </body>
+</html>
