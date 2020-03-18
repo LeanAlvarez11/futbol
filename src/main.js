@@ -194,7 +194,7 @@ function reset(){
 	var score1 = player1.score;
 	var score2 = player2.score;
 	if (screen.orientation.type=="landscape-primary"){
-		player1 = new Player(200, 50);
+		player1 = new Player(200,250);
 		player2 = new Player(600,250);
 		ball = new Ball(350,250);
 	}

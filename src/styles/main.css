@@ -8,6 +8,7 @@ body{
     width: 950px;
     height: 1300px;
     background-image: url("fondoChampV.jpg");
+    background-size: cover;
 }
 .cont {
     display: flex;
@@ -66,13 +67,14 @@ button{
         flex-direction: column;
     }
     button{
-        left: 5vw;
-        top: 20vh;
-        width: 30vw;
+        left:0.5vw;
+        top: 43vh;
+        width: 36.5vw;
     }
     #canvasDiv{
         width: 700px;
         height: 500px;
         background-image: url("fondoChamp.jpg");
+        background-size: contain;
     }
 }
